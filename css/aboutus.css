@@ -1,0 +1,310 @@
+/* CSS for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 0;
+  }
+
+  .navbar-logo {
+    margin-left: 40px
+  }
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+  }
+
+  .navbar-links a {
+    color: rgb(46, 191, 240); /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition effect */
+    text-decoration: none;
+    margin-right: 35px; /* Add margin between links */
+  }
+
+  .navbar-links a:hover,
+  .navbar-links a.active {
+    color: darkblue; /* Link color on hover and when active */
+    text-decoration: none;
+  }
+
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-icons a {
+    color: grey; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition effect */
+    margin-right: 35px; /* Add margin between links */
+  }
+
+  .navbar-icons a:hover,
+  .navbar-icons a.active {
+    color: black; /* Link color on hover and when active */
+    text-decoration: none;
+  }
+
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 180px;
+  }
+
+  .menu-items.show {
+    display: block;
+  }
+
+  .menu-items button {
+    width: 215px;
+    margin-top: 20px;
+    height: 45px;
+    margin-left: 0;
+  }
+
+  .menu-items .book{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: white;
+    color: rgb(46, 191, 240);
+    transition: background-color 0.2s ease;
+  }
+
+  .menu-items .book:hover{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: rgb(46, 191, 240);
+    color: white;
+  }
+
+  .menu-items .out{
+    border: 1px solid white;
+    background-color: rgb(46, 191, 240);
+    color: white;
+    transition: background-color 0.2s ease;
+  }
+
+  .menu-items .out:hover{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: white;
+    color: rgb(46, 191, 240);
+  }
+
+
+  html, body {
+    overflow-y: auto;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .navbar-logo img {
+    width: 80px;
+    height: 50px;
+    margin-left: 40px;
+  }
+
+
+
+ header {
+  position: relative;
+  height: 400px; /* Set the desired height for your header */
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+
+#video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Add a negative z-index to move the video behind the header */
+}
+
+#video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 110px;
+  font-size: 100px;
+  position: relative;
+  z-index: 1; /* Add a positive z-index to keep the header on top */
+}
+
+.blue-container {
+  width: 100%;
+  height: 300px;
+  padding: 80px;
+  margin-top: 0;
+  margin-bottom: 100px;
+  background-color: #DDE6ED;
+}
+
+.blue-container p {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+  line-height: 2;
+}
+
+.con1 {
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+}
+
+.con1 h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+.con1 .desc2 {
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+    left: 700px;
+    bottom:200px;
+
+  }
+
+.desc2 p {
+  line-height: 2;
+}
+
+.con1 img {
+  width: 180px;
+  margin-left: 250px;
+  position: relative;
+  top: 40px;
+}
+
+.con1 {
+  margin-bottom: 100px;
+}
+
+.con2 h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+.con2 .desc3 {
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+    left: 200px;
+    bottom:200px;
+  }
+
+.desc3 p {
+  line-height: 2;
+}
+
+.con2 img {
+  width: 180px;
+  margin-left: 250px;
+  position: relative;
+  top: 40px;
+  left: 850px;
+}
+
+.footer {
+  background-color: #c4c0c0de;
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 100px;
+  height: 285px;
+}
+
+
+.footer-column {
+  flex: 1;
+  margin-right: 40px;
+  color: #666;
+  margin-left: 90px;
+}
+
+.footer-column h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.social-media-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media-icons a {
+  color: #666;
+  font-size: 20px;
+}
+
+.social-media-icons a:hover {
+  color: #333;
+}
+
+.dark-blue-footer {
+  background-color: #152238;
+  color: #fff;
+  margin-top: 0;
+  height: 285px;
+}
+
+.dark-blue-footer p {
+  text-align: center;
+  color: white;
+  margin-right: 115px;
+  overflow: auto;
+
+}
+
+.logo2 {
+  width: 100px;
+  height: 100px;
+  margin-left: 500px;
+  overflow: auto;
+}

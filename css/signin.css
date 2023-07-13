@@ -1,0 +1,359 @@
+/* CSS for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 0;
+  }
+
+  .navbar-logo {
+    margin-left: 40px
+  }
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+  }
+
+  .navbar-links a {
+    color: rgb(46, 191, 240); /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition effect */
+    text-decoration: none;
+    margin-right: 35px; /* Add margin between links */
+  }
+
+  .navbar-links a:hover,
+  .navbar-links a.active {
+    color: darkblue; /* Link color on hover and when active */
+    text-decoration: none;
+  }
+
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-icons a {
+    color: grey; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition effect */
+    margin-right: 35px; /* Add margin between links */
+  }
+
+  .navbar-icons a:hover,
+  .navbar-icons a.active {
+    color: black; /* Link color on hover and when active */
+    text-decoration: none;
+  }
+
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 180px;
+  }
+
+  .menu-items.show {
+    display: block;
+  }
+
+  .menu-items button {
+    width: 215px;
+    margin-top: 25px;
+    height: 45px;
+    margin-left: 8px;
+  }
+
+  .menu-items .book{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: white;
+    color: rgb(46, 191, 240);
+    transition: background-color 0.2s ease;
+  }
+
+  .menu-items .book:hover{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: rgb(46, 191, 240);
+    color: white;
+  }
+
+  .menu-items .out{
+    border: 1px solid white;
+    background-color: rgb(46, 191, 240);
+    color: white;
+    transition: background-color 0.2s ease;
+  }
+
+  .menu-items .out:hover{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: white;
+    color: rgb(46, 191, 240);
+  }
+
+
+  html, body {
+    overflow-y: auto;
+  }
+
+  .navbar-logo img {
+    width: 80px;
+    height: 50px;
+    margin-left: 40px;
+  }
+
+.footer {
+  background-color: #c4c0c0de;
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0px;
+  height: 285px;
+  margin-top: 250px;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 40px;
+  color: #666;
+  margin-left: 90px;
+}
+
+.footer-column h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.social-media-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media-icons a {
+  color: #666;
+  font-size: 20px;
+}
+
+.social-media-icons a:hover {
+  color: #333;
+}
+
+.dark-blue-footer {
+  background-color: #152238;
+  color: #fff;
+  margin-top: 0;
+  height: 285px;
+}
+
+.dark-blue-footer p {
+  text-align: center;
+  color: white;
+  margin-right: 115px;
+  overflow: auto;
+
+}
+
+.logo2 {
+  width: 100px;
+  height: 100px;
+  margin-left: 500px;
+  overflow: auto;
+
+}
+
+.menu-items {
+  display: none;
+  position: absolute;
+  top: 50px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-items a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-items.show {
+  display: block;
+}
+
+.form-box {
+  margin:0 auto;
+  top: 130px;
+  padding:0;
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("../images/signinbg.jpg") no-repeat;
+  background-position: center ;
+  background-size: cover;
+  margin-top: -20px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px;
+  width: 310px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  height: 50px;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(-100%);
+  color: rgb(0, 0, 0);
+  pointer-events: none;
+  transition: 0.5s;
+  font-weight: lighter;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height:50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding:0 35px 0 5px;
+  color:rgb(0, 0, 0);
+}
+
+.inputbox ion-icon{
+  position: absolute;
+  right: 8px;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  top: 20px
+}
+
+.forgot{
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.forgot label input{
+  margin-right: 3px;
+}
+
+.forgot label a{
+  color: white;
+  text-decoration: none;
+}
+
+.forgot label a:hover{
+  text-decoration: underline;
+}
+
+button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 250px;
+  background-color: rgb(46, 191, 240);
+  margin-top: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 0.2s ease;
+  height: 40px;
+
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button[type="submit"] {
+  background-color: rgb(46, 191, 240);
+  color: #fff;
+  font-weight: bold;
+  margin-left: 60px;
+}
+
+.register{
+  font-size: .9em;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a{
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register p a:hover{
+  text-decoration: none;
+}
+
+.register p a:active{
+  text-decoration: none;
+}

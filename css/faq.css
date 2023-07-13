@@ -1,0 +1,300 @@
+/* CSS for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 0;
+  }
+
+  .navbar-logo {
+    margin-left: 40px
+  }
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+  }
+
+  .navbar-links a {
+    color: rgb(46, 191, 240); /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition effect */
+    text-decoration: none;
+    margin-right: 35px; /* Add margin between links */
+  }
+
+  .navbar-links a:hover,
+  .navbar-links a.active {
+    color: darkblue; /* Link color on hover and when active */
+    text-decoration: none;
+  }
+
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-icons a {
+    color: grey; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition effect */
+    margin-right: 35px; /* Add margin between links */
+  }
+
+  .navbar-icons a:hover,
+  .navbar-icons a.active {
+    color: black; /* Link color on hover and when active */
+    text-decoration: none;
+  }
+
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 180px;
+  }
+
+  .menu-items.show {
+    display: block;
+  }
+
+  .menu-items button {
+    width: 215px;
+    margin-top: 20px;
+    height: 45px;
+    margin-left: 0;
+  }
+
+  .menu-items .book{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: white;
+    color: rgb(46, 191, 240);
+    transition: background-color 0.2s ease;
+  }
+
+  .menu-items .book:hover{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: rgb(46, 191, 240);
+    color: white;
+  }
+
+  .menu-items .out{
+    border: 1px solid white;
+    background-color: rgb(46, 191, 240);
+    color: white;
+    transition: background-color 0.2s ease;
+  }
+
+  .menu-items .out:hover{
+    border: 1px solid rgb(46, 191, 240);
+    background-color: white;
+    color: rgb(46, 191, 240);
+  }
+
+
+  html, body {
+    overflow-y: auto;
+  }
+
+  .navbar-logo img {
+    width: 80px;
+    height: 50px;
+    margin-left: 40px;
+  }
+.booking-details h4{
+  margin-bottom: 40px;
+}
+
+
+
+
+
+html, body {
+  overflow-y: auto;
+}
+
+.faq {
+      position: absolute; /* Add position absolute to FAQ text */
+      top: 100px; /* Position at the top */
+      left: 75px; /* Position at the left */
+      margin: 0;
+      padding: 10px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+
+
+
+
+
+.footer {
+  background-color: #c4c0c0de;
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 100px;
+  height: 285px;
+}
+
+
+.footer-column {
+  flex: 1;
+  margin-right: 40px;
+  color: #666;
+  margin-left: 90px;
+}
+
+.footer-column h4 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.social-media-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media-icons a {
+  color: #666;
+  font-size: 20px;
+}
+
+.social-media-icons a:hover {
+  color: #333;
+}
+
+.dark-blue-footer {
+  background-color: #152238;
+  color: #fff;
+  margin-top: 0;
+  height: 285px;
+}
+
+.dark-blue-footer p {
+  text-align: center;
+  color: white;
+  margin-right: 115px;
+  overflow: auto;
+
+}
+
+.logo2 {
+  width: 100px;
+  height: 100px;
+  margin-left: 500px;
+  overflow: auto;
+
+}
+
+.container {
+    padding: 24px;
+    border-radius: 10px;
+    margin-top: 150px;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 1250px;
+    margin-bottom: 100px;
+    background-color: #f1f1f1;
+  }
+
+  .booking-details {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .booking-details h4 {
+    font-size: 25px;
+  }
+
+  .booking-details .title {
+    margin-top: 100px;
+  }
+
+  .q {
+    margin-top: 10px;
+  }
+
+  .question {
+    position: relative;
+    margin-bottom: 20px;
+
+  }
+
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .fa {
+    font-size: 20px;
+  }
+
+  .question-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .expand-container {
+    margin-top: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+  }
+
+  .expanded .expand-container {
+    max-height: 500px; /* Adjust the maximum height based on your content */
+    padding: 20px;
+  }
+
+
+.info {
+  margin-left: 30px;
+  margin-top: 160px;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f1f1f1;
+      margin: 0;
+
+    }
+  }
