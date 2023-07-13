@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Bookings</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bookings.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/73b7b5c316.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Explore your completed bookings on Hotel Finder. Easily search and manage your reservations. Edit or cancel bookings directly through hotel admin. Contact hotel for more information.">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="aboutus.html">About Us</a>
+      </div>
+      <div class="navbar-icons">
+        <a href="faq.html"><i class="fa-solid fa-headset fa-2x customer-service-icon"></i></a>
+        <a href="#" class="hamburger-toggle"><i class="fa-solid fa-bars fa-2x hamburger-icon"></i></a>
+      </div>
+      <div class="menu-items">
+        <button onclick="navigateToBookings()" class="book">My Bookings</button>
+        <button onclick="navigateToSignIn()" class="out">Sign Out</button>
+      </div>
+
+    </div>
+
+    <div class="header">
+    <h1>Completed Bookings</h1>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search properties...">
+      <button class="search-button"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+
+
+  <div class="container toggle-container" onclick="toggleContainer()">
+  <div class="image-container">
+    <img class="himg" src="images/p1.jpg" alt="Hotel Image">
+  </div>
+  <div class="description-container">
+    <h2>Tranquil Haven</h2>
+    <div class="buttons-container">
+      <button class="edit-button">Edit Booking</button>
+      <button class="cancel-button">Cancel Booking</button>
+    </div>
+  </div>
+</div>
+
+<div id="popup-message" class="popup" style="display: none;">
+  <img src="images/logo.png" alt="logo">
+  <h2>UH OH!</h2>
+  <p>To cancel or edit bookings, </p>
+  <p>please contact hotel admin directly.</p>
+  <p>Refer to the hotel page to find the contact details of hotel</p>
+  <p>Thank you for your cooperation</p>
+  <button id="close-button" onclick="window.location.href = 'hotel.html'">Close</button>
+</div>
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="footer-column">
+        <h4><b>Help</b></h4>
+        <ul>
+          <li><a href="faq.html">Customer Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4><b>Contact Us</b></h4>
+        <ul>
+          <li>Phone: 123-456-7890</li>
+          <li>Email: hotelfinder@gmail.com</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4><b>Follow Us</b></h4>
+        <ul class="social-media-icons">
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4><b>Company</b></h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <footer class="footer dark-blue-footer">
+      <div class="footer-column">
+        <p>All material here in © 2005 - 2020 Hotel Finder Company Pte. Ltd. All Rights Reserved.</p>
+        <p>Hotel Finder is part of Booking Holdings Inc., the world leader in online travel travel agency licence</p>
+        <img class="logo2" src="images/booking.svg" alt="bookings.com logo">
+      </div>
+    </footer>
+
+
+    <script src="bookings.js"></script>
+  </body>
+</html>

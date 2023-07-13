@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Finder Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/73b7b5c316.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Discover our Hotel Finder Website, where you can easily search and book your dream hotel in prime locations. Explore a wide selection of accommodations, from luxury hotels to cozy retreats, offering spacious rooms and excellent amenities. Start planning your perfect stay today.">
+  </head>
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="aboutus.html">About Us</a>
+      </div>
+      <div class="navbar-icons">
+        <a href="faq.html"><i class="fa-solid fa-headset fa-2x customer-service-icon"></i></a>
+        <a href="#" class="hamburger-toggle"><i class="fa-solid fa-bars fa-2x hamburger-icon"></i></a>
+      </div>
+      <div class="menu-items">
+        <button onclick="navigateToBookings()" class="book">My Bookings</button>
+        <button onclick="navigateToSignIn()" class="out">Sign Out</button>
+      </div>
+
+    </div>
+
+
+  <div class="background-container">
+  </div>
+
+  <div class="header">
+    <h1>Welcome to our Hotel Booking Platform</h1>
+    <h3>Book your dream hotel with ease and comfort</h3>
+  </div>
+
+  <div class="search-container">
+  <form id="search-form">
+    <div class="search-input">
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" placeholder="Enter destination">
+    </div>
+    <div class="search-input-group">
+      <div class="search-input">
+        <label for="from-date">From:</label>
+        <input type="text" id="from-date" placeholder="Select date (DD/MM/YY)">
+      </div>
+      <div class="search-input">
+        <label for="to-date">To:</label>
+        <input type="text" id="to-date" placeholder="Select date (DD/MM/YY)">
+      </div>
+    </div>
+    <div class="search-input">
+      <label for="room-type">Room Type:</label>
+      <select id="room-type">
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="twin">Twin</option>
+        <option value="suite">Suite</option>
+      </select>
+    </div>
+    <button class="search-button">Search</button>
+  </form>
+</div>
+
+
+  <div class="carousel-container">
+    <div class="malaysia">
+      <h2 class="title-malaysia">Top destinations in Malaysia</h2>
+    </div>
+  <div class="carousel">
+    <div class="slide">
+      <img src="images/kl-modified.png" alt=" Hotel Image 1">
+      <div class="description">Kuala Lumpur</div>
+      <p class="rental">86932 rentals</p>
+    </div>
+    <div class="slide">
+      <img src="images/cam-high-modified.png" alt="Hotel Image 2">
+      <div class="description">Cameron Highlands</div>
+      <p class="rental">11902 rentals</p>
+    </div>
+    <div class="slide">
+      <img src="images/gt-modified.png" alt="Hotel Image 3">
+      <div class="description">George Town</div>
+      <p class="rental">7370 rentals</p>
+    </div>
+    <div class="slide">
+      <img src="images/langkawi-modified.png" alt="Hotel Image 4">
+      <div class="description">Langkawi</div>
+      <p class="rental">1106 rentals</p>
+    </div>
+    <div class="slide">
+      <img src="images/ipoh-modified.png" alt="Hotel Image 5">
+      <div class="description">Ipoh</div>
+      <p class="rental">4587 rentals</p>
+    </div>
+    <div class="slide">
+      <img src="images/pd-modified.png" alt="Hotel Image 5">
+      <div class="description">Port Dickson</div>
+      <p class="rental">53921 rentals</p>
+    </div>
+  </div>
+  <button class="prev-button"><i class="fa-solid fa-backward fa-2x"></i></button>
+  <button class="next-button"><i class="fa-solid fa-forward fa-2x"></i></button>
+</div>
+
+
+
+<div class="property-section">
+  <div class="property-header">
+    <h2 class="title-property">Recommended Homes For You</h2>
+  </div>
+  <a href="hotel.html" class="property-item">
+    <div class="property-image">
+      <img class="p-img" src="images/p1.jpg" alt="Property 1">
+      <span class="rating-icon">8.7</span>
+    </div>
+    <div class="property-description">
+      <p class="pname">Tranquil Haven</p>
+      <p class="pplace">Chowkit/Putra WTC, Kuala Lumpur</p>
+      <p class="price">RM 400</p>
+    </div>
+  </a>
+  <a href="hotel.html" class="property-item">
+    <div class="property-image">
+      <img src="images/p2.jpg" alt="Property 2">
+      <span class="rating-icon">7.9</span>
+    </div>
+    <div class="property-description">
+      <p class="pname">Serenity Villa</p>
+      <p class="pplace">Bukit Bintang, Kuala Lumpur</p>
+      <p class="price">RM 104</p>
+    </div>
+  </a>
+  <a href="hotel.html" class="property-item">
+    <div class="property-image">
+      <img src="images/p3.webp" alt="Property 3">
+      <span class="rating-icon">8.8</span>
+    </div>
+    <div class="property-description">
+      <p class="pname">Hilton Hotel</p>
+      <p class="pplace">Kuala Lumpur City Centre, Kuala Lumpur</p>
+      <p class="price">RM 148</p>
+    </div>
+  </a>
+  <a href="hotel.html" class="property-item">
+    <div class="property-image">
+      <img src="images/p4.jpg" alt="Property 4">
+      <span class="rating-icon">9.1</span>
+    </div>
+    <div class="property-description">
+      <p class="pname">Coastal Paradise</p>
+      <p class="pplace">Cyberjaya, Kuala Lumpur</p>
+      <p class="price">RM 110</p>
+    </div>
+  </a>
+  <a href="hotel.html" class="property-item">
+    <div class="property-image">
+      <img src="images/p5.jpg" alt="Property 5">
+      <span class="rating-icon">8.5</span>
+    </div>
+    <div class="property-description">
+      <p class="pname">Sunset Vista</p>
+      <p class="pplace">Tanjung Bungah, Penang</p>
+      <p class="price">RM 115</p>
+    </div>
+  </a>
+  <a href="hotel.html" class="property-item">
+    <div class="property-image">
+      <img src="images/p6.jpg" alt="Property 6">
+      <span class="rating-icon">7.9</span>
+    </div>
+    <div class="property-description">
+      <p class="pname">Riverside Serenade</p>
+      <p class="pplace">Malacca City Center, Malacca</p>
+      <p class="price">RM 172</p>
+    </div>
+  </a>
+  <a href="hotel.html" class="property-item">
+    <div class="property-image">
+      <img src="images/p7.jpg" alt="Property 7">
+      <span class="rating-icon">8.7</span>
+    </div>
+    <div class="property-description">
+      <p class="pname">Enchanted Hideaway </p>
+      <p class="pplace">Ayer Keroh, Malacca</p>
+      <p class="price">RM 281</p>
+    </div>
+  </a>
+  <a href="hotel.html" class="property-item">
+    <div class="property-image">
+      <img src="images/p8.webp" alt="Property 8">
+      <span class="rating-icon">7.9</span>
+    </div>
+    <div class="property-description">
+      <p class="pname">Skyline Heights</p>
+      <p class="pplace">Georgetown, Penang</p>
+      <p class="price">RM 129</p>
+    </div>
+  </a>
+
+<!-- Additional properties -->
+
+  <div class="extra-properties" id="extraProperties">
+    <div class="property-item">
+      <div class="property-image">
+        <img src="images/p9.jpg" alt="Property 9">
+        <span class="rating-icon">7.1</span>
+      </div>
+      <div class="property-description">
+        <p class="pname">Almas Puteri Habour</p>
+        <p class="pplace">Bintulu, Sarawak</p>
+        <p class="price">RM 241</p>
+      </div>
+    </div>
+    <div class="property-item">
+      <div class="property-image">
+        <img src="images/p10.jpg" alt="Property 10">
+        <span class="rating-icon">9.6</span>
+      </div>
+      <div class="property-description">
+        <p class="pname">Tropical Oasis</p>
+        <p class="pplace">Tebrau, Johor Bahru</p>
+        <p class="price">RM 168</p>
+      </div>
+    </div>
+    <div class="property-item">
+      <div class="property-image">
+        <img src="images/p11.jpg" alt="Property 11">
+        <span class="rating-icon">9.1</span>
+      </div>
+      <div class="property-description">
+        <p class="pname">Meadowbrook Haven</p>
+        <p class="pplace">Central Business District, Kota Kinabalu</p>
+        <p class="price">RM 229</p>
+      </div>
+    </div>
+    <div class="property-item">
+      <div class="property-image">
+        <img src="images/p12.jpeg" alt="Property 12">
+        <span class="rating-icon">5.9</span>
+      </div>
+      <div class="property-description">
+        <p class="pname">Harmony View</p>
+        <p class="pplace">Tanjuang Aru, Kota Kinabalu</p>
+        <p class="price">RM 162</p>
+      </div>
+    </div>
+    <div class="property-item">
+      <div class="property-image">
+        <img src="images/p13.jpg" alt="Property 13">
+        <span class="rating-icon">6.9</span>
+      </div>
+      <div class="property-description">
+        <p class="pname">Blissful Beachfront</p>
+        <p class="pplace">Johor Bahru City Center, Johor Bahru</p>
+        <p class="price">RM 229</p>
+      </div>
+    </div>
+    <div class="property-item">
+      <div class="property-image">
+        <img src="images/p14.jpg" alt="Property 14">
+        <span class="rating-icon">7.2</span>
+      </div>
+      <div class="property-description">
+        <p class="pname">Coastal Serenity</p>
+        <p class="pplace">Chinatown, Kuala Lumpur</p>
+        <p class="price">RM 221</p>
+      </div>
+    </div>
+    <div class="property-item">
+      <div class="property-image">
+        <img src="images/p15.jpeg" alt="Property 15">
+        <span class="rating-icon">8.1</span>
+      </div>
+      <div class="property-description">
+        <p class="pname">Whispering Brook</p>
+        <p class="pplace">Bangsar, Kuala Lumpur</p>
+        <p class="price">RM 310</p>
+      </div>
+    </div>
+    <div class="property-item">
+      <div class="property-image">
+        <img src="images/p16.jpg" alt="Property 16">
+        <span class="rating-icon">8.3</span>
+      </div>
+      <div class="property-description">
+        <p class="pname">Oasis View</p>
+        <p class="pplace">Kota Damansara, Petaling Jaya</p>
+        <p class="price">RM 311</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="see-more-button" id="seeMoreButton">See More Properties</button>
+</div>
+
+<footer class="footer">
+  <div class="footer-column">
+    <h4><b>Help</b></h4>
+    <ul>
+      <li><a href="faq.html">Customer Support</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h4><b>Contact Us</b></h4>
+    <ul>
+      <li>Phone: 123-456-7890</li>
+      <li>Email: hotelfinder@gmail.com</li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h4><b>Follow Us</b></h4>
+    <ul class="social-media-icons">
+      <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h4><b>Company</b></h4>
+    <ul>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </div>
+</footer>
+
+<footer class="footer dark-blue-footer">
+  <div class="footer-column">
+    <p>All material here in © 2005 - 2020 Hotel Finder Company Pte. Ltd. All Rights Reserved.</p>
+    <p>Hotel Finder is part of Booking Holdings Inc., the world leader in online travel travel agency licence</p>
+    <img class="logo2" src="images/booking.svg" alt="bookings hotel logo">
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>

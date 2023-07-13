@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Contact Details</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/contact-details.css">
+  <!-- Include the necessary CSS and script files for Bootstrap and Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/73b7b5c316.js" crossorigin="anonymous"></script>
+  <meta name="description"
+    content="Provide your contact details to proceed with the booking process. Enter your full name, email address, and phone number.">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="images/logo.png" alt="logo">
+    </div>
+    <div class="timeline">
+      <div class="timeline-step active">
+        <div class="step-label">1</div>
+      </div>
+      <p class="one">Contact Details</p>
+      <div class="timeline-line"></div>
+      <div class="timeline-step">
+        <div class="step-label">2</div>
+      </div>
+      <p class="two">Payment Info</p>
+      <div class="timeline-line2"></div>
+      <div class="timeline-step3">
+        <div class="step-label">3</div>
+      </div>
+      <p class="three">Confirm Booking!</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="icon-container">
+      <i class="fas fa-user fa-2x"></i>
+      <h3 class="contact-details">Contact Details</h3>
+    </div>
+    <form class="contact-form">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" required placeholder="John Doe">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required placeholder="123-456-7890">
+
+      <button type="submit" onclick="redirectToPayment()">Submit</button>
+    </form>
+  </div>
+
+  <script src="contact-details.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>FAQ Page</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/73b7b5c316.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <meta name="description" content="Find answers to frequently asked questions about booking, cancellations, and more. Learn how to make a booking, what information is required, cancellation policies, and contact information for assistance.">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="images/logo.png" alt="logo">
+    </div>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="aboutus.html">About Us</a>
+    </div>
+    <div class="navbar-icons">
+      <a href="faq.html"><i class="fa-solid fa-headset fa-2x customer-service-icon"></i></a>
+      <a href="#" class="hamburger-toggle"><i class="fa-solid fa-bars fa-2x hamburger-icon"></i></a>
+    </div>
+    <div class="menu-items">
+      <button onclick="navigateToBookings()" class="book">My Bookings</button>
+      <button onclick="navigateToSignIn()" class="out">Sign Out</button>
+    </div>
+
+  </div>
+
+  <h2 class="faq">FAQs</h2>
+
+  <div class="container">
+  <div class="booking-details">
+    <h4>Booking Details</h4>
+    <div class="question">
+      <button class="arrow-button" onclick="toggleExpansion(event)">
+        <i class="fa fa-angle-down"></i>
+      </button>
+      <div class="question-content">
+        <p class="q">How can I make a booking?</p>
+        <div class="expand-container">
+          <p>
+            Making a booking is easy! You have two options: visit our website or get in touch with our friendly customer service team. On our website, you'll find a user-friendly search function where you can enter your destination, preferred dates of stay, and any other specific preferences you may have. Once you've found the perfect accommodation, you can proceed to book online or reach out to our customer service team for personalized assistance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="booking-details">
+    <div class="question">
+      <button class="arrow-button" onclick="toggleExpansion(event)">
+        <i class="fa fa-angle-down"></i>
+      </button>
+      <div class="question-content">
+        <p class="q">What information do I need to provide when booking?</p>
+        <div class="expand-container">
+          <p>
+            To ensure a smooth booking process, we'll ask you for some essential details, such as:
+          </p>
+          <ul>
+            <li>Full name of the primary guest</li>
+            <li>Contact information, including your email address and phone number</li>
+            <li>Desired check-in and check-out dates</li>
+            <li>Number of guests (including adults and children)</li>
+            <li>Any special requests or preferences you might have, such as room type, bed size, or specific amenities you'd like to have during your stay.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="booking-details">
+    <div class="question">
+      <button class="arrow-button" onclick="toggleExpansion(event)">
+        <i class="fa fa-angle-down"></i>
+      </button>
+      <div class="question-content">
+        <p class="q">Do I need to pay a deposit when booking?</p>
+        <div class="expand-container">
+          <p>The payment policy varies depending on the accommodation provider. Some may require a deposit to secure your booking, while others allow you to pay the full amount upon arrival. During the booking process, you will be provided with detailed information about any required deposit and the payment options available.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="booking-details">
+    <h4 class="title">Cancellations</h4>
+    <div class="question">
+      <button class="arrow-button" onclick="toggleExpansion(event)">
+        <i class="fa fa-angle-down"></i>
+      </button>
+      <div class="question-content">
+        <p class="q">How can I cancel my booking?</p>
+        <div class="expand-container">
+          <p>
+            We understand that plans can change, and we're here to assist you with your cancellation. To cancel your booking, please contact our customer service team directly. They will guide you through the cancellation process and help ensure everything goes smoothly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="booking-details">
+    <div class="question">
+      <button class="arrow-button" onclick="toggleExpansion(event)">
+        <i class="fa fa-angle-down"></i>
+      </button>
+      <div class="question-content">
+        <p class="q">Is there a deadline for cancellations?</p>
+        <div class="expand-container">
+          <p>Cancellation deadlines can vary depending on the accommodation provider and the specific terms and conditions of your booking. It's best to refer to your booking confirmation or get in touch with our customer service team as soon as possible to determine the applicable cancellation deadline.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="booking-details">
+    <div class="question">
+      <button class="arrow-button" onclick="toggleExpansion(event)">
+        <i class="fa fa-angle-down"></i>
+      </button>
+      <div class="question-content">
+        <p class="q">Will I incur any fees if I cancel my booking?</p>
+        <div class="expand-container">
+          <p>Whether or not there are cancellation fees depends on the accommodation provider and the specific terms and conditions of your booking. Some providers may have a cancellation fee, especially if you cancel close to the scheduled check-in date. To understand the potential fees involved, we recommend reviewing your booking confirmation or contacting our customer service team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <p>Can't find your answer here? Contact us at:</p>
+    <p>Click here to email us at <a href="mailto:helpdesk@hotelfinder.com.my" style="color: blue">helpdesk@hotelfinder.com.my</a> OR Call <a href="tel:+03-123456789" style="color: blue">03-123456789</a></p>
+
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="footer-column">
+      <h4><b>Help</b></h4>
+      <ul>
+        <li><a href="#">Customer Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4><b>Contact Us</b></h4>
+      <ul>
+        <li>Phone: 123-456-7890</li>
+        <li>Email: hotelfinder@gmail.com</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4><b>Follow Us</b></h4>
+      <ul class="social-media-icons">
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4><b>Company</b></h4>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <footer class="footer dark-blue-footer">
+    <div class="footer-column">
+      <p>All material here in © 2005 - 2020 Hotel Finder Company Pte. Ltd. All Rights Reserved.</p>
+      <p>Hotel Finder is part of Booking Holdings Inc., the world leader in online travel travel agency licence</p>
+      <img class="logo2" src="images/booking.svg" alt="bookings.com logo">
+    </div>
+  </footer>
+
+  <script src="faq.js"></script>
+</body>
+</html>
